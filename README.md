@@ -19,14 +19,14 @@ Touchstone Viewer is a professional application for visualizing S-parameter data
 
 - **Operating System**: Windows 11
 - **Qt**: Version 6.6.3
-- **Compiler**: MinGW 11.2.0 (64-bit)
+- **Compiler**: MSVC2022
 - **Build System**: CMake 3.20+
 
 ## Build Instructions
 
 ### 1. Install Prerequisites
 
-- [Qt 6.6.3](https://www.qt.io/download-qt-installer) (select MinGW 11.2.0 during installation)
+- [Qt 6.6.3](https://www.qt.io/download-qt-installer) (select MSVC2022 during installation)
 - [CMake](https://cmake.org/download/)
 - [Git](https://git-scm.com/downloads)
 
@@ -34,8 +34,8 @@ Touchstone Viewer is a professional application for visualizing S-parameter data
 
 **Add to system PATH:**
 
-- C:\Qt\6.6.3\mingw_64\bin (usualy)
-- C:\Qt\Tools\mingw1120_64\bin (usualy)
+- C:\Qt\6.6.3\MSVC2022\bin (usualy)
+- C:\Qt\Tools\MSVC2022_64\bin (usualy)
 - C:\Program Files\CMake\bin (usualy)
 
 
@@ -52,7 +52,7 @@ mkdir build
 cd build
 
 # Compile
-cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="your_directory_to_cmake" ..
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="your_directory_to_cmake" ..
 
 # Builds
 cmake --build .
