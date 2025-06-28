@@ -18,7 +18,7 @@ Touchstone Viewer is a professional application for visualizing S-parameter data
 ## Requirements
 
 - **Operating System**: Windows 11
-- **Qt**: Version 6.6.3
+- **Qt**: Version 6.6.3 or higher
 - **Compiler**: MSVC2022
 - **Build System**: CMake 3.20+
 
