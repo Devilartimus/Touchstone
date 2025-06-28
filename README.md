@@ -34,9 +34,9 @@ Touchstone Viewer is a professional application for visualizing S-parameter data
 
 **Add to system PATH:**
 
-- C:\Qt\6.6.3\mingw_64\bin
-- C:\Qt\Tools\mingw1120_64\bin
-- C:\Program Files\CMake\bin
+- C:\Qt\6.6.3\mingw_64\bin (usualy)
+- C:\Qt\Tools\mingw1120_64\bin (usualy)
+- C:\Program Files\CMake\bin (usualy)
 
 
 
@@ -52,10 +52,10 @@ mkdir build
 cd build
 
 # Compile
-cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="C:/Qt/6.6.3/mingw_64/lib/cmake" ..
+cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="your_directory_to_cmake" ..
 
 # Builds
-cmake --build . --parallel
+cmake --build .
 ```
 
 ### 3. Start Application
